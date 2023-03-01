@@ -1,4 +1,4 @@
-package com.ott;
+package com.ott.environment;
 
 public class Environment implements EnvironmentI {
 	

@@ -12,7 +12,7 @@
         <constructor-arg value="India"></constructor-arg>
     </bean>
 
-
+    <!--
     <bean id="employee" class="com.ott.entity.Employee">
         <constructor-arg value="12" type="int"></constructor-arg>
         <constructor-arg value="Sonoo"></constructor-arg>
@@ -20,5 +20,6 @@
             <ref bean="address"/>
         </constructor-arg>
     </bean>
+    -->
 
 </beans>

@@ -1,7 +1,7 @@
 package com.ott.controller;
 
-import com.ott.Environment;
-import com.ott.EnvironmentI;
+import com.ott.environment.Environment;
+import com.ott.environment.EnvironmentI;
 import com.ott.repository.TutorialRepository;
 import com.ott.service.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
