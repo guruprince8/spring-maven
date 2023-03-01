@@ -6,14 +6,14 @@
         xsi:schemaLocation="http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="address" class="com.ott.Address">
+    <bean id="address" class="com.ott.entity.Address">
         <constructor-arg value="ghaziabad"></constructor-arg>
         <constructor-arg value="UP"></constructor-arg>
         <constructor-arg value="India"></constructor-arg>
     </bean>
 
 
-    <bean id="employee" class="com.ott.Employee">
+    <bean id="employee" class="com.ott.entity.Employee">
         <constructor-arg value="12" type="int"></constructor-arg>
         <constructor-arg value="Sonoo"></constructor-arg>
         <constructor-arg>

@@ -1,5 +1,9 @@
-package com.ott;
+package com.ott.controller;
 
+import com.ott.Environment;
+import com.ott.EnvironmentI;
+import com.ott.repository.TutorialRepository;
+import com.ott.service.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
@@ -33,7 +37,7 @@ public class ApplicationController {
 
 	@GetMapping("/hello")
 	public String sayHello(@RequestParam String name) {
-		return "Hello "+name+" "+environment.toString()+" "+EnvironmentI.verion;
+		return "Hello "+name+" "+environment.toString()+" "+ EnvironmentI.verion;
 	}
 	
 	@GetMapping("/products")

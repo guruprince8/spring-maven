@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ott;
+package com.ott.entity;
 
 /**
  * @author c302318

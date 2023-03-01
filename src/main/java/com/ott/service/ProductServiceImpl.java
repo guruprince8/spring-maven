@@ -1,12 +1,13 @@
 /**
  * 
  */
-package com.ott;
+package com.ott.service;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.ott.entity.Product;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,7 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductServiceImpl implements ProductServiceI {
 	
-	private static Map<String,Product> productRepo = new HashMap<String,Product>();
+	private static Map<String, Product> productRepo = new HashMap<String,Product>();
 	
 	static {
 		Product p1 = new Product(); p1.setId("1");p1.setName("Honey");

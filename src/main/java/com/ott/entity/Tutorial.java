@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ott;
+package com.ott.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

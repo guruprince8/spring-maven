@@ -1,4 +1,4 @@
-package com.ott;
+package com.ott.entity;
 
 public class Address {
     private String city;

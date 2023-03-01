@@ -1,4 +1,6 @@
-package com.ott;
+package com.ott.service;
+
+import com.ott.entity.Product;
 
 import java.util.Collection;
 
