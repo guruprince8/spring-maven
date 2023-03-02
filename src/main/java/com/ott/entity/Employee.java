@@ -6,11 +6,12 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 @Table(name = "employee")
-public class Employee {
+public class Employee implements Serializable {
 
     @Id
     @JsonProperty(value = "empId")
@@ -142,5 +143,10 @@ public class Employee {
 
     public void setExit_date(Date exit_date) {
         this.exit_date = exit_date;
+    }
+
+    @Override
+    public String toString(){
+        return "[empId="+this.emp_id+"]";
     }
 }
