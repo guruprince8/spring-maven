@@ -10,6 +10,7 @@ import java.util.Collection;
 
 public interface EmployeeRepository extends JpaRepository<Employee,String> {
 
-    @Query ( value = "select b from Blog b where b.posted_by=:empId")
-    public abstract Collection<Blog> findBlogsPostedBy(@Param("empId") String empId);
+    // @Query ( value = "select b from Blog b where b.posted_by=:empId")
+    @Query ( value = "select b.content from Blog b, Employee e where b.posted_by=e.emp_id and b.posted_by=:empId")
+    Collection<Blog> findBlogsPostedBy(@Param("empId") String empId);
 }
